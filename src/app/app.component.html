@@ -1,0 +1,20 @@
+
+<!-- Event Binding Examples in Angular -->
+<!-- On click : clickSave function will get call -->
+<div>Single Event Handler</div>
+<button (click)="clickSave()">Click Save</button>
+
+<!-- On click : clickSave & clickAction functions will get call -->
+<div>Multiple Event Handler</div>
+<button (click)="clickSave(); clickAction()">Action and Save</button>
+
+<!-- On click : clickSavewithEvent function will get call with passing event 'VJ Tech Diary' -->
+<div>Event Handler with passing events</div>
+<button (click)="clickSavewithEvent('VJ Tech Diary')">Click Save with Event</button>
+
+<!-- On Keydown enter : clickSavewithEvent function will get call with passing event 'Done' -->
+<div>Pseudo-Events: Keyup & Keydown (enter)</div>
+<input (keydown.enter)="clickSavewithEvent('Done')">
+
+
+<router-outlet></router-outlet>
